@@ -1,0 +1,184 @@
+
+/* 
+ *	Name: Responsive layout;
+ *	Author: Andor Nagy;
+ *	Website : andornagy.com;
+ *	
+------------------------------------------
+ * 
+ *	Responsive Layout is lightweight css and html layout 
+ *	that can help you kickstart your website development.
+ *
+ *	You are free to use this framework for you own projects
+ *	and for client works. Credit is always welcome.
+ *
+ *	DO NOT sell it as your own work.
+ *  
+--------------------------------------------- */
+
+
+
+
+/* Imports
+--------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+/* Helper Classes
+--------------------------------------------- */
+
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+
+/* Typography
+--------------------------------------------- */
+
+body {
+	font-size:18px;
+	line-height: 32px;
+	color: #333;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	margin: 0 0 24px;
+	margin: 0 0 2.4rem;
+	padding: 0;
+}
+
+
+/* Links
+--------------------------------------------- */
+
+a {
+	text-decoration: none;
+	color: #FF5722
+}
+
+a:hover {
+	text-decoration: underline; 
+	color: #E64A19;
+}
+
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333;
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 16px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+
+
+/* Sections
+--------------------------------------------- */
+
+#container{
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Content
+--------------------------------------------- */
+
+#content {
+	float: left;
+	padding: 3%;
+	width: 64%;
+	background-color: rgb(255, 255, 255);
+	-moz-box-shadow: 0 0 2px orange;
+    -webkit-box-shadow: 0 0 2px orange;
+    box-shadow: 0 0 2px orange;
+}
+
+/* Sidebar
+--------------------------------------------- */
+
+aside {
+	float: right;
+	padding: 3%;
+	width: 35%;
+	background-color: rgb(255, 255, 255);
+	-moz-box-shadow: 0 0 2px orange;
+    -webkit-box-shadow: 0 0 2px orange;
+    box-shadow: 0 0 2px orange;
+}
+
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	header {
+		text-align: center;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	#content {
+		width: 94%;
+		padding: 3%;	
+	}
+
+	#sidebar {
+		width: 94%;
+		padding: 3%;
+		border-top: 3px solid #E64A19;
+	}
+
+}
+/*
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+*/

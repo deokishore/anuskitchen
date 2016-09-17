@@ -1,0 +1,85 @@
+<!--
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+    <http auto-config="true">
+        <intercept-url pattern="/" access="permitAll" />
+        <intercept-url pattern="/home" access="permitAll" />
+        <intercept-url pattern="/admin**" access="hasRole('ADMIN')" />
+        <intercept-url pattern="/dba**" access="hasRole('ADMIN') and hasRole('DBA')" />
+        <form-login  authentication-failure-url="/Access_Denied" />
+    </http>
+
+    <authentication-manager >
+        <authentication-provider>
+            <user-service>
+                <user name="bill"  password="abc123"  authorities="ROLE_USER" />
+                <user name="admin" password="root123" authorities="ROLE_ADMIN" />
+                <user name="dba"   password="root123" authorities="ROLE_ADMIN,ROLE_DBA" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+
+</beans:beans>
+-->
+
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+    <http auto-config="true" >
+        <csrf disabled="true"/>
+        <intercept-url pattern="/" access="permitAll" />
+        <intercept-url pattern="/home" access="permitAll" />
+        <intercept-url pattern="/addProductToCart" access="permitAll" />
+        <intercept-url pattern="/product" access="permitAll" />
+        <intercept-url pattern="/admin**" access="hasRole('ADMIN')" />
+        <intercept-url pattern="/dba**" access="hasRole('ADMIN') and hasRole('DBA')" />
+        <intercept-url pattern="/protected/**" access="isAuthenticated()" />
+
+        <form-login login-page="/login" username-parameter="ssoId"
+                        password-parameter="password"
+                            authentication-failure-url="/Access_Denied"
+                                default-target-url="/authen"/>
+
+        <csrf/>
+    </http>
+
+    <beans:bean id="customUserDetailsService" class="com.tamaar.service.CustomUserDetailsService"></beans:bean>
+
+    <authentication-manager>
+        <authentication-provider user-service-ref="customUserDetailsService">
+        </authentication-provider>
+    </authentication-manager>
+
+    <!--
+    <authentication-manager >
+        <authentication-provider>
+            <jdbc-user-service data-source-ref="myContactDataSource"
+                               users-by-username-query="select email, password, enabled from system_user where email = ?"
+                               authorities-by-username-query="select u.email as login, u.user_role as role from system_user u where u.email = ?" />
+        </authentication-provider>
+    </authentication-manager>
+    -->
+
+    <!--
+
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:jdbc-user-service
+                    data-source-ref="myContactDataSource"
+                    users-by-username-query="select email, password, enabled from system_user where email = ?"
+                    authorities-by-username-query="select u.email as login, u.user_role as role from system_user u where u.email = ?" />
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    -->
+
+
+</beans:beans>

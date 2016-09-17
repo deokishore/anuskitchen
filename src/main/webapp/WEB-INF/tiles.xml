@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <!-- Kitchen Master Start -->
+    <definition name="master.page" template="/public/template/master.jsp">
+        <put-attribute name="header" value="/public/template/header.jsp"/>
+        <put-attribute name="footer" value="/public/template/footer.jsp"/>
+    </definition>
+    <!-- Tamaar Master End -->
+
+    <!--  Kitchen Welcome -->
+    <definition name="homePage" extends="master.page">
+        <put-attribute name="body" value="/protected/homePage.jsp"/>
+    </definition>
+
+    <!--  Kitchen Cart Items Page -->
+    <definition name="cartItems" extends="master.page">
+        <put-attribute name="body" value="/protected/cartItems.jsp"/>
+    </definition>
+
+
+    <!--  Kitchen Account Login Page -->
+    <definition name="login" extends="master.page">
+        <put-attribute name="body" value="/protected/login.jsp"/>
+    </definition>
+
+    <!--  Kitchen Account Login Page -->
+    <definition name="userRegistration" extends="master.page">
+        <put-attribute name="body" value="/protected/userRegistration.jsp"/>
+    </definition>
+
+    <!--  Kitchen Account Login Page -->
+    <definition name="personalDetails" extends="master.page">
+        <put-attribute name="body" value="/protected/personalDetails.jsp"/>
+    </definition>
+
+    <!--  Kitchen Account Payment Option -->
+    <definition name="paymentOption" extends="master.page">
+        <put-attribute name="body" value="/protected/paymentOption.jsp"/>
+    </definition>
+
+
+</tiles-definitions>

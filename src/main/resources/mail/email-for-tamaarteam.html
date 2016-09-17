@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">Template for HTML email (simple)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<style>
+		table, td, th {
+		border: 1px solid #ddd;
+		text-align: left;
+		}
+
+		table {
+		border-collapse: collapse;
+		}
+
+		th, td {
+		padding: 15px;
+		background-color: #BEB198;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div>
+		<div>
+		<table style="border: 1px solid #faf9f0 display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;" align="center" border="0" cellpadding="0" cellspacing="0" width="805">
+			
+				<tr>
+					<td>
+						<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+							<p><b> Dear Tamaar Team, <br/>
+								<br/>
+								&nbsp; We have received an order, please do the needful.</b></p>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+							<p><b>Order Id  :</b></p>
+							<p th:text="${orderId}"></p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		 </div>
+		 <div>
+					<table style="border: 1px solid #faf9f0 display: inline-block;
+    						font-family: FontAwesome;
+    						font-style: normal;
+    						font-weight: normal;
+    						line-height: 1;
+    						-webkit-font-smoothing: antialiased;" align="center" border="0" 
+    						cellpadding="0" cellspacing="0" width="805">
+
+						<tr>
+							<th>Product Name</th>
+							<th>Quantity</th>
+							<th>Price</th>
+							<th>Total Price</th>
+						</tr>
+
+						<tr th:each="row : *{orderDetailsVO}" th:object="${orderDetailsVO}">
+							<td>
+								<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+									<p><span th:text="${row.productVo.productId}"></span></p>
+								</div>
+							</td>
+							<td>
+								<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+									<p><span th:text="${row.quantity}"></span></p>
+								</div>	
+							</td>
+							<td>
+								<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+									<p><span th:text="${row.productVo.priceVo.amount}"></span></p>
+								</div>	
+							</td>
+							<td>
+								<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+									<p><span th:text="${row.totalPrice}"></span></p>
+								</div>	
+							</td>
+						</tr>
+					
+					</table>
+			</div>
+			
+			<div>	
+				<table style="border: 1px solid #faf9f0 display: inline-block;
+    						font-family: FontAwesome;
+    						font-style: normal;
+    						font-weight: normal;
+    						line-height: 1;
+    						-webkit-font-smoothing: antialiased;" align="center" border="0" 
+    						cellpadding="0" cellspacing="0" width="805">
+    						
+    				
+    				<tr>
+					<td>
+						<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+							<table >
+								<tbody>
+									<tr>
+										<td style="background-color: #faf9f0">
+											<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+											<p style="font-weight: bolder; color: #333333; font-size: 14pt;"><b>Best Regards</b></p>
+											<a href="http://tamarskincare.com/">
+												<!--<img src="http://k1builders.co.uk/resources/images/tt-logo.png" border="0"></img>-->
+											</a>
+											<br/>
+											<font style="font-weight: bolder; color: #333333; font-size: 11pt;">Tamaar Limited</font><br/>
+											<font style="color: #1F497D; font-size: 10pt; font-weight: bold;"> 50 Isle Court,
+												London, E16 3PA
+												</font> <br/>
+											<font style="color: #1A1A1F; font-weight: bold; font-style: italic; font-size: 12px;">Website:</font>
+											<font style="color: #1A1A1F; font-size: 10pt; font-weight: bold; font-style: italic;"><a href="http://tamarskincare.com/" style="color: #1F497D; text-decoration: none;">http://tamarskincare.com/</a></font><br/>
+											<font style="color: #1A1A1F; font-weight: bold; font-style: italic; font-size: 12px;">Email:</font>
+											<font style="color: #1A1A1F; font-size: 10pt; font-weight: bold; font-style: italic;">
+												<a href="mailto:customer.care@tamarskincare.com" style="color: #1F497D; text-decoration: none;">customer.care@tamarskincare.com</a>:
+											</font>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td style="background-color: #faf9f0">
+											<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 0px;">
+												<font style="color: #333333; font-weight: bold; font-style: italic; font-size: 12px;">P:</font>
+												<font style="color: #1F497D; font-size: 10pt; font-weight: bold; font-style: italic;">+(44)-7561420709</font>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+				</tr>
+    				
+    				
+    						
+    						<tr>
+								<td>
+									<div style="background-color: #faf9f0; padding: 10px; margin: 0 3px; border: 1px solid #6c6c6c;">
+										<p><b>Unsubscribe Policy:</b></p>
+										<p>	If you do not wish to benefit from our recruitment services, please email us at customer.care@tamarskincare.com with unsubscribe in the subject header </p>
+									</div>
+								</td>
+							</tr>
+				
+    						
+    			</table>			
+    		  </div>	
+				
+		
+	
+		
+	</div>
+	
+</body>
+</html>
