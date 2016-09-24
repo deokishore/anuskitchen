@@ -36,11 +36,11 @@
         <!-- Home Page Diamond Content Start -->
         <section id="content">
             <section id="mainpage" class="player" data-property="{videoURL:'',containment:'self',autoPlay:true, mute:true, startAt:0,opacity:1}">
-                <video poster="http://www.gohomely.com/assets/frontend/images/header/1.png.pagespeed.ce.Khouy2TvQB.png" width="auto" height="auto" autoplay="" loop=""                          class="hidden-xs">
+                <video poster="http://www.gohomely.com/assets/frontend/images/header/1.png.pagespeed.ce.Khouy2TvQB.png" width="auto" height="auto" autoplay="" loop="" class="hidden-xs">
                     <source src="http://www.gohomely.com/assets/frontend/video/goHOMELY.mp4" type="video/mp4">
-                        <source src="http://www.gohomely.com/assets/frontend/video/goHOMELY.webm" type="video/ogg">
+                    <source src="http://www.gohomely.com/assets/frontend/video/goHOMELY.webm" type="video/ogg">
                 </video>
-                    <video poster="http://www.gohomely.com//resources/images/gh/header/1m.png.pagespeed.ce.EusF8Hsd-c.png" width="auto" height="auto" autoplay="" loop="" class="visible-xs">
+                <video poster="http://www.gohomely.com//resources/images/gh/header/1m.png.pagespeed.ce.EusF8Hsd-c.png" width="auto" height="auto" autoplay="" loop="" class="visible-xs">
                 </video>
                 <div class="col-md-4 hidden-xs floatsocio pull-left" style="padding:0px;">
                 </div>
@@ -72,70 +72,71 @@
                             <a href="index.html#" class="confirmalertbox">
                                 <!-- <a href="" data-toggle="modal" data-target="#still-cooking"> -->
                             </a>
-                            <div class="col-xs-3 dbg center bgr">
-                                <a href="index.html#" class="confirmalertbox">
-                                </a>
-                                <div class="rotate-wrap">
-                                    <a href="index.html#" class="confirmalertbox">
-                                        <p class="micon"><img src="/resources/images/gh/homepage/x2.png.pagespeed.ic.aGxwaCPmVL.png"></p>
-                                        <p><span class="planmd">Special's</span></p>
-                                        <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
-                                    </a>
 
-                                    <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
-                                        <p>
-                                            <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
-                                        </p>
-                                    </form>
-                                    <a href="foods.html"></a>
-                                </div>
-                                <a href="foods.html"></a>
+                            <div class='circle col-xs-3 dbg center bgr'>
+                                 <a href="index.html#"></a>
+                                  <div class="rotate-wrap">
+
+                                      <a href="index.html#" class="confirmalertbox">
+                                          <p><span class="planmd">Special's</span></p>
+                                          <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
+                                      </a>
+
+                                      <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
+                                          <p>
+                                              <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
+                                          </p>
+                                      </form>
+                                      <a href="foods.html"></a>
+                                  </div>
+                                  <a href="foods.html"></a>
                             </div>
-                            <a href="foods.html"></a>
-                            <a href="combo.html"></a>
-                            <div class="col-xs-3 dbgtop center bw">
-                                <a href="combo.html"></a>
-                                <div class="rotate-wrap">
-                                    <a href="combo.html">
-                                        <p class="mic"><img src="/resources/images/gh/homepage/x1home.png.pagespeed.ic.ABnXl0GG3O.png">
-                                        </p>
-                                        <p class="goh"><span class="planmdtop"> Combo </span>
-                                            <br> Daily Fresh Menu</p>
-                                        <p class="goh">Lunch : Order before 12 PM </p>
-                                        <p class="goh">
-                                            <!-- Dinner : Order before 7 PM  -->
-                                        </p>
-                                        <br>
-                                    </a>
-                                    <p>
-                                        <a href="combo.html"></a>
-                                        <a href="combo.html">
-                                            <button type="button" class="btn btn-sm btn-danger">ORDER</button>
-                                        </a>
-                                    </p>
-                                </div>
 
+
+
+                            <div class='circle col-xs-3 dbg center bgr'>
+                                 <a href="index.html#"></a>
+                                 <div class="rotate-wrap">
+
+                                     <a href="index.html#" class="confirmalertbox">
+                                         <p><span class="planmd">Special's</span></p>
+                                         <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
+                                     </a>
+
+                                     <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
+                                         <p>
+                                             <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
+                                         </p>
+                                     </form>
+                                     <a href="foods.html"></a>
+                                 </div>
+                                 <a href="foods.html"></a>
                             </div>
-                        </div>
-                        <div class="row col-md-offset-2">
-                            <a href="index.html#" data-toggle="modal" data-target="#snacks">
-                                <div class="col-xs-3 dbg center bgr" style="margin-left:60px;">
 
-                                    <div class="rotate-wrap">
-                                        <p class="micon"><img src="/resources/images/gh/homepage/x4home.png.pagespeed.ic.CqTeCa1jUG.png">
-                                        </p>
-                                        <p><span class="planmd">Plan your celebration</span>
-                                        </p>
-                                        <p class="goh"> You can find London Bulk/wedding/party Orders in</p>
-                                        <br>
-                                        <p>
-                                            <button type="button" class="btn btn-sm btn-danger">PLAN</button>
-                                        </p>
-                                    </div>
 
-                                </div>
-                            </a>
+
+                            <div class='circle col-xs-3 dbg center bgr'>
+                              <a href="index.html#"></a>
+                                  <div class="rotate-wrap">
+
+                                      <a href="index.html#" class="confirmalertbox">
+                                          <p><span class="planmd">Special's</span></p>
+                                          <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
+                                      </a>
+
+                                      <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
+                                          <p>
+                                              <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
+                                          </p>
+                                      </form>
+                                      <a href="foods.html"></a>
+                                  </div>
+                              <a href="foods.html"></a>
+                            </div>
+
                         </div>
+
+
                     </div>
                     <!-- col-xs-12-->
                     <div class="overlay-text">

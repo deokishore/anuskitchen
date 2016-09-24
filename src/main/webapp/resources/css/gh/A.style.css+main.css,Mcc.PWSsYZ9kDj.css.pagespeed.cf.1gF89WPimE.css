@@ -20,65 +20,7 @@ h1 {
     margin-top: 35px;
     margin-bottom: 60px
 }
-.diamond-grid {
-    width: auto;
-    margin: 0 auto;
-    padding-right: 10px
-}
-.diamond-grid li {
-    float: left;
-    list-style: outside none none;
-    margin-left: 83px;
-    margin-top: 81px
-}
-.diamond {
-    height: 220px;
-    width: 220px;
-    background: transparent;
-    color: #fff;
-    display: block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    border: 3px solid #fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: color .35s linear;
-    -moz-transition: color .35s linear;
-    -o-transition: color .35s linear;
-    transition: color .35s linear
-}
-.diamond:hover {
-    background: #fff;
-    color: #3cddb9
-}
-.diamond-grid > li:nth-child(9n+6) {
-    margin-left: 66px;
-    margin-top: -6px
-}
-.diamond-grid > li:nth-child(5) {
-    margin-left: 182px
-}
-.diamond-grid > li:nth-child(n+5) {
-    margin-top: -51px
-}
-.text {
-    width: 220px;
-    height: 220px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    text-transform: uppercase;
-    display: table-cell;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    text-align: center
-}
+
 body {
     background: #fff;
     font-family: 'Roboto', sans-serif;
@@ -594,22 +536,24 @@ ul {
     color: #000
 }
 .rotate {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg)
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg)
 }
 .rotate h2 {
     font-size: 26px;
     font-family: 'Marker-Felt';
     color: #fff;
     letter-spacing: 8px
+    margin-left: 16.66666667%;
+    margin-top: 16.66%;
 }
 .micon img {
     filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1)
 }
 .rotate-wrap {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg)
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
 }
 .rotate-wrap .form-control {
     width: 69%;
@@ -762,4 +706,36 @@ video {
 .brandmob {
     position: absolute;
     transform: scale(.8)
+}
+
+
+/**
+ * HTML5 / CSS3 Circle with Partial Border
+ * http://stackoverflow.com/q/13059190/1397351
+ */
+* { margin: 0; padding: 0; }
+.circle {
+	position: relative;
+	margin: 7em auto;
+	width: 16em; height: 16em;
+	border-radius: 50%;
+	background-color: rgba(40, 37, 37, .8);
+	margin-right: 30px;
+
+}
+.arc {
+	overflow: hidden;
+	position: absolute;
+	top: -1em; right: 50%; bottom: 50%; left: -1em;
+	transform-origin: 100% 100%;
+	transform: rotate(45deg) skewX(30deg);
+}
+.arc:before {
+	box-sizing: border-box;
+	display: block;
+	border: solid 1em navy;
+	width: 200%; height: 200%;
+	border-radius: 50%;
+	transform: skewX(-30deg);
+	content: '';
 }

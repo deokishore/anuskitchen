@@ -12220,3 +12220,48 @@ body:not(.no-transition) #wrapper,
     clear:both;
     margin:0 auto;
 }
+
+.formSubmitConfirm{
+	position: absolute;
+	top: 450px;
+	left: 130px;
+	z-index: 1000;
+	width: 475px;
+	height: 89px;
+	padding: 10px 0;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	background-color: #858787;
+	-webkit-transform-origin: center bottom;
+	   -moz-transform-origin: center bottom;
+			transform-origin: center bottom;
+	-webkit-transition: all 1s ease-in-out;
+	   -moz-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+			transform: scale(0);
+
+}
+.formSubmitConfirmLoad{
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+			transform: scale(1);
+}
+.formSubmitConfirm span{
+	display: block;
+	font-size: 20px;
+}
+.formSubmitConfirm:after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -16px;
+	width: 0;
+	height: 0;
+	border-right: 16px solid transparent;
+	border-left: 16px solid transparent;
+	border-top: 16px solid #858787;
+}
