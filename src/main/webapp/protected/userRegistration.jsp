@@ -131,6 +131,8 @@
                                 <md-button type="button" name="submit" onclick="location.href='/login'" class="md-raised md-primary fleft">Previous Step</md-button>
                                 <md-button type="submit" name="submit" class="md-raised md-primary fright">Next Step</md-button>
                             </md-input-container>
+
+                            <md-button class="add-tab md-primary md-raised"  type="submit" style="margin-right: 0;">Add Tab</md-button>
                         </div>
 
                     </form>

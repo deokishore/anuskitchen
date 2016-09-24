@@ -70,6 +70,20 @@ public class CheckoutController {
         return new ModelAndView("paymentOption");
     }
 
+    @RequestMapping(value = "finalReview", method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
+    public ModelAndView finalReview(@RequestParam(value = "isGuest", required = false) String isGuest,  HttpSession session){
+        //ShoppingCart shoppingCart = (ShoppingCart)session.getAttribute("shoppingCart");
+        //shoppingCart.getLoginResponse().setIsGuest(Boolean.valueOf(isGuest));
+        return new ModelAndView("finalReview");
+    }
+
+    @RequestMapping(value = "orderComplete", method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
+    public ModelAndView orderComplete(@RequestParam(value = "isGuest", required = false) String isGuest,  HttpSession session){
+        //ShoppingCart shoppingCart = (ShoppingCart)session.getAttribute("shoppingCart");
+        //shoppingCart.getLoginResponse().setIsGuest(Boolean.valueOf(isGuest));
+        return new ModelAndView("orderComplete");
+    }
+
     @RequestMapping(value = "customerRegistration", method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT})
     public ModelAndView customerRegistration(@RequestParam("isGuest") String isGuest, HttpSession session){
         ShoppingCart shoppingCart = (ShoppingCart)session.getAttribute("shoppingCart");

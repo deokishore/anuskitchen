@@ -63,7 +63,7 @@
 
                 <div ng-controller="AppCtrl" layout="column" ng-cloak="" class="inputdemoErrors">
                     <form name="projectForm" action="/checkout/paymentOption" method="post">
-                            <div layout-gt-sm="row">
+                        <div layout-gt-sm="row">
                            <md-input-container class="md-block" flex-gt-sm>
                               <label>Name on the card</label>
                               <input md-maxlength="30" name="name" ng-model="user.name"  required/>
@@ -97,6 +97,7 @@
                                  </md-option>
                               </md-select>
                            </md-input-container>
+
                            <md-input-container>
                               <label>YY</label>
                               <md-select ng-model="ctrl.userState">
@@ -105,17 +106,18 @@
                                  </md-option>
                               </md-select>
                            </md-input-container>
+                        </div>
+                        <div layout="row">
                            <md-input-container>
                               <label>CSV</label>
                               <input>
                            </md-input-container>
                         </div>
 
-
                         <div layout-gt-sm="row">
                             <md-input-container class="md-block" flex-gt-sm>
-                                <md-button type="button" name="submit" onclick="location.href='/checkout/personalDetails'" class="md-raised md-primary fleft">Previous Step</md-button>
-                                <md-button type="submit" name="submit" class="md-raised md-primary fright">Next Step</md-button>
+                                <md-button type="button" name="submit" onclick="location.href='/checkout/paymentOption'" class="md-raised md-primary fleft">Previous Step</md-button>
+                                <md-button type="submit" name="submit" class="md-raised md-primary fright" onclick="location.href='/checkout/finalReview'">Next Step</md-button>
                             </md-input-container>
                         </div>
 
