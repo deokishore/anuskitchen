@@ -3,16 +3,23 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+<link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
+<link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
 
-    <!-- Home Page Diamond CSS Start -->
-    <link href="<c:url value='/resources/css/gh/A.bootstrap.min.css+hover.css+common.css+demo.css+combo.css,Mcc.UHwGff4XCY.css.pagespeed.cf.YWQ6N3FF07.css'/>" rel="stylesheet"/>
-    <link href="<c:url value='/resources/css/gh/A.style.css+main.css,Mcc.PWSsYZ9kDj.css.pagespeed.cf.1gF89WPimE.css'/>" rel="stylesheet"/>
-    <!-- Home Page Diamond CSS End -->
+
+<div class="navBtn box active ui-draggable"></span>
+
+</div>
 
 
     <!-- Document Wrapper
     ============================================= -->
-    <div id="wrapper" class="clearfix">
+    <div id="wrapper" class="clearfix" ng-controller="AppCtrl" id="popupContainer" ng-cloak="" ng-app="MyApp">
+
+
+
+
 
 
         <!-- Page Title
@@ -33,324 +40,119 @@
 
 
 
-        <!-- Home Page Diamond Content Start -->
-        <section id="content">
-            <section id="mainpage" class="player" data-property="{videoURL:'',containment:'self',autoPlay:true, mute:true, startAt:0,opacity:1}">
-                <video poster="http://www.gohomely.com/assets/frontend/images/header/1.png.pagespeed.ce.Khouy2TvQB.png" width="auto" height="auto" autoplay="" loop="" class="hidden-xs">
-                    <source src="http://www.gohomely.com/assets/frontend/video/goHOMELY.mp4" type="video/mp4">
-                    <source src="http://www.gohomely.com/assets/frontend/video/goHOMELY.webm" type="video/ogg">
-                </video>
-                <video poster="http://www.gohomely.com//resources/images/gh/header/1m.png.pagespeed.ce.EusF8Hsd-c.png" width="auto" height="auto" autoplay="" loop="" class="visible-xs">
-                </video>
-                <div class="col-md-4 hidden-xs floatsocio pull-left" style="padding:0px;">
-                </div>
-                <!--col-4-->
-                <div class="col-xs-1 col-xs-offset-11 floatsocio pull-right" style="padding:0px;">
-                    <ul class="pull-right">
-                        <li>
-                            <a href="https://www.facebook.com/gohomely"><img src="/resources/images/gh/footer/1.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/+Gohomely/about"><img src="/resources/images/gh/footer/x2.png.pagespeed.ic.6yhR_5z6ML.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/GoHomely"><img src="/resources/images/gh/footer/x3.png.pagespeed.ic.9FIhOl9i2D.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.com/gohomely/"><img src="/resources/images/gh/footer/x4.png.pagespeed.ic.YvH500pUxs.jpg"></a>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="container happy visible-lg visible-md">
-
-                    <div class="col-xs-12 col-md-offset-2 rotate">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h2> Happiness is homemade</h2>
-                                <br> </div>
-                            <a href="index.html#" class="confirmalertbox">
-                                <!-- <a href="" data-toggle="modal" data-target="#still-cooking"> -->
-                            </a>
-
-                            <div class='circle col-xs-3 dbg center bgr'>
-                                 <a href="index.html#"></a>
-                                  <div class="rotate-wrap">
-
-                                      <a href="index.html#" class="confirmalertbox">
-                                          <p><span class="planmd">Special's</span></p>
-                                          <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
-                                      </a>
-
-                                      <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
-                                          <p>
-                                              <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
-                                          </p>
-                                      </form>
-                                      <a href="foods.html"></a>
-                                  </div>
-                                  <a href="foods.html"></a>
-                            </div>
+       <!-- Sequence Section -->
+       	<div class="sectionWrapper sequenceSection full-page">
+       		<div role="main" class="sectionContainer homeContent">
+       			<button class="prev">Previous Slide</button>
+       			<button class="next">Next Slide</button>
 
 
 
-                            <div class='circle col-xs-3 dbg center bgr'>
-                                 <a href="index.html#"></a>
-                                 <div class="rotate-wrap">
+       			<section class="sequence">
 
-                                     <a href="index.html#" class="confirmalertbox">
-                                         <p><span class="planmd">Special's</span></p>
-                                         <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
-                                     </a>
+       				<ul class="sequence-canvas">
+       				<li>
+       					<img src="/resources/images/banner/about/slice.png" alt="Yellow Slice" class="orange">
+                           <img src="/resources/images/banner/about/slice-shadow.png" alt="Yellow Slice" class="orangeShadow">
+       					<div class="aboutYS">
+       						<h1>Yellow Slice is a <br> branding<br>&amp; UI/UX<br>Design Studio <br></h1>
+       						<p class="secndCnt">in Mumbai</p>
+       					</div>
+       				</li>
 
-                                     <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
-                                         <p>
-                                             <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
-                                         </p>
-                                     </form>
-                                     <a href="foods.html"></a>
-                                 </div>
-                                 <a href="foods.html"></a>
-                            </div>
-
-
-
-                            <div class='circle col-xs-3 dbg center bgr'>
-                              <a href="index.html#"></a>
-                                  <div class="rotate-wrap">
-
-                                      <a href="index.html#" class="confirmalertbox">
-                                          <p><span class="planmd">Special's</span></p>
-                                          <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span></p>
-                                      </a>
-
-                                      <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
-                                          <p>
-                                              <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
-                                          </p>
-                                      </form>
-                                      <a href="foods.html"></a>
-                                  </div>
-                              <a href="foods.html"></a>
-                            </div>
-
-                        </div>
+                       <!-- testing -->
+                       <li>
+       					<img src="/resources/images/banner/VentureCatalysts/flower1.png" alt="Venture Catalysts" class="ventureBack">
+                           <img src="/resources/images/banner/VentureCatalysts/logo-symbol1.png" alt="Venture Catalysts logo" class="ventureSymbol">
+       					<img src="/resources/images/banner/VentureCatalysts/logo.png" alt="Venture Catalysts" class="ventureLogo">
+       					<div class="venturePara">
+       					  <h1><span>Start-up</br>India</span></h1>
+       						<h2 class="secndCnt">India's biggest Seed Investors <br>&amp; Innovations Platform.</h2>
+       				  </div>
+       				</li>
+                       <!-- testing -->
 
 
-                    </div>
-                    <!-- col-xs-12-->
-                    <div class="overlay-text">
-                        <div class="row">
-                            "India's largest platform
-                            <br>with widest range of homemade food"
-                        </div>
-                    </div>
-                </div>
-                <!-- container -->
+                       <li>
+       					<img src="/resources/images/banner/puremart/puremartLogo.png" alt="Pure Mart logo" class="puremartLogo">
+       					<img src="/resources/images/banner/puremart/almondBag.png" alt="Pure Mart" class="almondBag">
+       					<img src="/resources/images/banner/puremart/bagShadow.png" alt="Pure Mart" class="almondShadow">
+       					<img src="/resources/images/banner/puremart/saffronBag.png" alt="Pure Mart" class="saffronBag">
+       					<img src="/resources/images/banner/puremart/bagShadow.png" alt="Pure Mart" class="saffronShadow">
+       					<div class="pureMartPara">
+       						<h1><span>100% Pure </span><br>&amp; Organic</h1>
+       						<h2 class="secndCnt">A fresh and colourful approach <br>to branding and packaging.</h2>
+       					</div>
+       				</li><!-- track 0 -->
+       				<li>
+       					<img src="/resources/images/banner/ananda/sun.png" alt="Ananda" class="anandaSun">
+       					<img src="/resources/images/banner/ananda/bird1.png" alt="Ananda" class="anandaBrd1">
+       					<img src="/resources/images/banner/ananda/bird2.png" alt="Ananda" class="anandaBrd2">
+       					<img src="/resources/images/banner/ananda/bird3.png" alt="Ananda" class="anandaBrd3">
+       					<img src="/resources/images/banner/ananda/bird4.png" alt="Ananda" class="anandaBrd4">
+       					<img src="/resources/images/banner/ananda/anandaLogo1.png" alt="Ananda" class="anandaLogo1">
+       					<img src="/resources/images/banner/ananda/anandaLogo2.png" alt="Ananda" class="anandaLogo2">
+       					<div class="anandaPara">
+       						<h1><span>HAPPINESS </span>IS COLOURFUL</h1>
+       						<h2 class="secndCnt">Branding a niche <br>apartment building.</h2>
+       					</div>
+       				</li><!-- track 0 -->
+       				<li>
+       					<img src="/resources/images/banner/YCL/YCL-player.png" alt="YCL Player" class="YCLPlyr">
+       					<img src="/resources/images/banner/YCL/YCL-logo.png" alt="YCL Logo"  class="YCLLogo">
+       					<img src="/resources/images/banner/YCL/YCL-Ball.png" alt="YCL Ball" class="YCLBall">
+       					<div class="YCLPara">
+       						<h1>Football<br><span class="orangeText">&amp;</span> Revolution</h1>
+       						<h2 class="secndCnt">A revitalising logo and brand design <br>for a youth football league.</h2>
+       					</div>
+       				</li><!-- track 2 -->
+       				<li>
+       					<img src="/resources/images/banner/RR/rocket-rewards-logo.png" alt="Rocket Rewardz Logo" class="RRlogo">
+       					<img src="/resources/images/banner/RR/rocket-shadow.png" alt="Rocket" class="RocketShadow">
+       					<img src="/resources/images/banner/RR/rocket.png" alt="Rocket" class="Rocket">
+       					<img src="/resources/images/banner/RR/clouds.png" alt="Rocket"  class="cloudBottom">
+       					<img src="/resources/images/banner/RR/clouds2.png" alt="Rocket" class="cloudTop">
+       					<div class="RRPara">
+       						<h1>Shop, earn<br><span class="orangeText">&amp; </span>Burn</h1>
+       						<h2 class="secndCnt">Brand design and website <br>for a reward portal </h2>
+       					</div>
+       				</li><!-- track 3 -->
+       				<li>
+       					<img src="/resources/images/banner/Springboard/hot-air-baloon-big.png" alt="Hot Air Baloon" class="hotAirB1">
+       					<img src="/resources/images/banner/Springboard/hot-air-baloon-small.png" alt="Hot Air Baloon"  class="hotAirB2">
+       					<img src="/resources/images/banner/Springboard/Springboard-Ventures-logo.png" alt="Springboard Ventures Logo" class="SBVlogo">
+       					<div class="SBV">
+       						<h1><span class="orangeText">Spring</span> to<br>a new start!</h1>
+       						<h2 class="secndCnt">Branding and website design <br>for Venture Capital company</h2>
+       					</div>
+       				</li><!-- track 4 -->
+       				<li>
+       					<div class="sufiestaIcoContain">
+       						<img src="/resources/images/banner/SF/ico1.png" class="sufiestaIco1" alt="Start-up Fiesta">
+       						<img src="/resources/images/banner/SF/ico2.png" class="sufiestaIco2" alt="Start-up Fiesta">
+       						<img src="/resources/images/banner/SF/ico3.png" class="sufiestaIco3" alt="Start-up Fiesta">
+       						<img src="/resources/images/banner/SF/ico4.png" class="sufiestaIco4" alt="Start-up Fiesta">
+       						<img src="/resources/images/banner/SF/ico5.png" class="sufiestaIco5" alt="Start-up Fiesta">
+       						<img src="/resources/images/banner/SF/ico6.png" class="sufiestaIco6" alt="Start-up Fiesta">
+       					</div>
+       					<img src="/resources/images/banner/SF/logo.png" alt="Start-up Fiesta Logo" class="suFiestaLogo">
+       					<div class="sufiestaPara">
+                           	<h1><span>MEET, GREET <br></span><span class="orangeText">&amp;</span> CONNECT</h1>
+       						<h2 class="secndCnt">An online and offline design <br>event that powered startup.</h2>
+       					</div>
+       				</li><!-- track 5 -->
+       			</ul>
+       			</section>
+               </div>
 
-                <!--for small screen-->
-
-                <div class="container  visible-sm happybday">
-
-                    <br>
-                    <div class="col-xs-12 col-md-offset-2 rotate">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h2> Happiness is homemade</h2> </div>
-                            <a href="index.html#" class="confirmalertbox"></a>
-                            <div class="col-xs-3 dbg center bgr">
-                                <a href="index.html#" class="confirmalertbox"> </a>
-                                <div class="rotate-wrap">
-                                    <a href="index.html#" class="confirmalertbox">
-                                        <p class="micon"><img src="/resources/images/gh/homepage/x2.png.pagespeed.ic.aGxwaCPmVL.png">
-                                        </p>
-                                        <p><span class="planmd">Special's</span>
-                                        </p>
-                                        <p> <span class="goh"> Place your order for customised  meal before 8pm for next day delivery</span>
-                                        </p>
-                                    </a>
-                                    <p class="form-group">
-                                    </p>
-                                    <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
-                                        <p class="form-group">
-                                            <select class="selectpicker form-control" data-style="btn-danger" data-live-search="true" name="location">
-                                                <option class="required" value="">Select Location</option>
-                                                <option class="required" value="Agara">Agara</option>
-                                                <option class="required" value="HSR Layout">HSR Layout</option>
-                                                <option class="required" value="Sarjapur Road">Sarjapur Road</option>
-                                                <option class="required" value="Bellandur">Bellandur</option>
-                                                <option class="required" value="Madiwala">Madiwala</option>
-                                                <option class="required" value="Silk Board">Silk Board</option>
-                                                <option class="required" value="Koramangala">Koramangala</option>
-                                            </select>
-                                        </p>
-                                        <p>
-                                            <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
-                                        </p>
-                                    </form>
-                                    <p></p>
-                                    <a href="foods.html"></a>
-                                </div>
-                                <a href="foods.html"></a>
-                            </div>
-
-                            <a href="combo.html"></a>
-                            <div class="col-xs-3 dbg center bw">
-                                <a href="combo.html"></a>
-                                <div class="rotate-wrap">
-                                    <a href="combo.html">
-                                        <p class="micon"><img src="/resources/images/gh/homepage/x1home.png.pagespeed.ic.ABnXl0GG3O.png">
-                                        </p>
-                                        <p class="goh"><span class="planmd"> Combo </span>
-                                            <br> Daily Fresh Menu</p>
-                                        <p class="goh">Lunch : Order before 12 PM </p>
-                                        <p class="goh">
-                                            <!-- Dinner : Order before 7 PM  -->
-                                        </p>
-                                        <br>
-                                    </a>
-                                    <p>
-                                        <a href="combo.html"></a>
-                                        <a href="combo.html">
-                                            <button type="button" class="btn btn-sm btn-danger">ORDER</button>
-                                        </a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row col-md-offset-2">
-                            <!-- <a href="#"   data-toggle="modal" data-target="#still-cooking" >-->
-                            <div class="col-xs-3 dbg center bgr" style="margin-left:260px;">
-
-                                <div class="rotate-wrap">
-                                    <p class="micon"><img src="/resources/images/gh/homepage/x4home.png.pagespeed.ic.CqTeCa1jUG.png">
-                                    </p>
-                                    <p><span class="planmd">Plan your celebration</span>
-                                    </p>
-                                    <p class="goh"> You can find Bangalore Bulk/wedding/party Orders in</p>
-                                    <br>
-                                    <p>
-                                       <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#snacks">PLAN</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col-xs-12-->
-                </div>
-                <!-- container -->
-                <!--end-->
-
-                <!--for xtra small screen-->
-                <!--for xtra small screen-->
-                <div class="container happy visible-xs happybdaytoyou">
-
-                    <div class="col-xs-12 ">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <!-- <h2 style="color:white"> Happiness is homemade</h2> -->
-                            </div>
-                            <a href="index.html#" class="confirmalertbox">
-                                <div class="col-xs-6 dbg center bgr">
-
-                                    <div class="">
-                                        <p class="micon"><img src="/resources/images/gh/homepage/x2.png.pagespeed.ic.aGxwaCPmVL.png">
-                                        </p>
-                                        <p><span class="planmd">Special's</span>
-                                        </p>
-                                        <p> <span class="goh hidden-xs"> Place your order for customised  meal before 6pm for next day delivery</span>
-                                        </p>
-                                        <p class="form-group">
-                                        </p>
-                                        <form id="searchform" name="searchform" method="get" action="http://www.gohomely.com/search/locationsearch">
-                                            <p class="form-group">
-                                                <select class="selectpicker form-control" data-style="btn-danger" data-live-search="true" name="location">
-                                                    <option class="required" value="">Select Location</option>
-                                                    <option class="required" value="Agara">Agara</option>
-                                                    <option class="required" value="HSR Layout">HSR Layout</option>
-                                                    <option class="required" value="Sarjapur Road">Sarjapur Road</option>
-                                                    <option class="required" value="Bellandur">Bellandur</option>
-                                                    <option class="required" value="Madiwala">Madiwala</option>
-                                                    <option class="required" value="Silk Board">Silk Board</option>
-                                                    <option class="required" value="Koramangala">Koramangala</option>
-                                                </select>
-                                            </p>
-                                            <p>
-                                                <button type="button" class="btn btn-sm btn-danger confirmalertbox">PLAN</button>
-                                            </p>
-                                        </form>
-
-                                        <p></p>
-                                        <!-- <p>  <button  type="button" class="btn btn-sm btn-danger">PLAN</button> </p>-->
-                                    </div>
-
-                                </div>
-                            </a>
-                            <a href="combo.html"></a>
-                            <div class="col-xs-6 dbg center bw">
-                                <a href="combo.html">
-
-                                </a>
-                                <div class="">
-                                    <a href="combo.html">
-                                        <p class="micon"><img src="/resources/images/gh/homepage/x1.png.pagespeed.ic._ZYgAxBVuR.png">
-                                        </p>
-                                        <p class="goh"><span class="planmd"> Combo</span>
-                                            <br> Daily Fresh Menu</p>
-                                        <p class="goh hidden-xs">Lunch : Order before 12 PM </p>
-                                        <p class="goh hidden-xs">
-                                            <!--  Dinner : Order before 7 PM  -->
-                                        </p>
-                                        <br>
-                                    </a>
-                                    <p>
-                                        <a href="combo.html"></a>
-                                        <a href="combo.html">
-                                            <button type="button" class="btn btn-sm btn-danger">ORDER</button>
-                                        </a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 dbg center bgr">
-
-                                <div class="">
-                                    <p class="micon"><img src="/resources/images/gh/homepage/x4.png.pagespeed.ic.h99UVDGk9x.png">
-                                    </p>
-                                    <p><span class="planmd">Plan your celebration</span>
-                                    </p>
-                                    <p class="goh hidden-xs"> You can find London Bulk/wedding/party Orders in</p>
-                                    <br>
-                                    <p>
-                                        <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#snacks">PLAN</button>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col-xs-12-->
-                </div>
-                <!-- container -->
-            </section>
-        </section>
-        <!-- Home Page Diamond Content End -->
+           </div>
 
         <!--main page how it works-->
         <section id="homepage">
             <div class="container">
 
-                <div class="col-md-12">
-                    <div class="col-xs-12 col-sm-12 plat">
-                        <blockquote>
-                            <p>A platform for home chefs to showcase their unique culinary skills to the world with regular income!!
-                                <br> For someone craving for home made delicacies, goHomely is just for you. </p>
-                        </blockquote>
-                    </div>
-                </div>
+
 
                 <div class="col-md-12">
                     <div class="col-xs-12 col-sm-12 plat">
@@ -365,8 +167,6 @@
                                 <div class="col-md-12 combo" style="padding:0px;">
 
                                     <div class="col-md-12 col-xs-12 col-sm-12 how" style="margin-top:-40px; margin-bottom:15px;">
-                                        <p>Today's <span class="green">Menu</span>
-                                        </p>
                                         <hr>
                                     </div>
                                     <!--col-12-->
@@ -400,10 +200,18 @@
 
                                             <div class="panel-footer">
                                                 <div class="product-overlay">
-                                                    <a href="#" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
-                                                    <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
+                                                    <a href ng-click="showTabDialog($event)" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                    <a href ng-click="showTabDialog($event)" class="item-quick-view"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
                                                 </div>
                                             </div>
+
+                                             <div ng-show="status.length > 0" id="status">
+                                                <b layout="row" layout-align="center center" class="md-padding">
+                                                {{status}}
+                                                </b>
+                                             </div>
+
+
                                         </div>
                                     </div>
 
@@ -437,10 +245,16 @@
 
                                             <div class="panel-footer">
                                                 <div class="product-overlay">
-                                                    <a href="#" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
-                                                    <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
+                                                    <a href ng-click="showTabDialog($event)" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                    <a href ng-click="showTabDialog($event)" class="item-quick-view"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
                                                 </div>
                                             </div>
+
+                                             <div ng-show="status.length > 0" id="status">
+                                                <b layout="row" layout-align="center center" class="md-padding">
+                                                {{status}}
+                                                </b>
+                                             </div>
                                         </div>
                                     </div>
 
@@ -474,10 +288,16 @@
 
                                             <div class="panel-footer">
                                                 <div class="product-overlay">
-                                                    <a href="#" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
-                                                    <a href="#" class="item-quick-view" data-lightbox="ajax"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
+                                                    <a href ng-click="showTabDialog($event)" class="add-to-cart"><i class="icon-shopping-cart"></i><span> Add to Cart</span></a>
+                                                    <a href ng-click="showTabDialog($event)" class="item-quick-view"><i class="icon-zoom-in2"></i><span> Quick View</span></a>
                                                 </div>
                                             </div>
+
+                                             <div ng-show="status.length > 0" id="status">
+                                                <b layout="row" layout-align="center center" class="md-padding">
+                                                {{status}}
+                                                </b>
+                                             </div>
                                         </div>
                                     </div>
 
@@ -487,214 +307,252 @@
                         </div>
 
                         <div id="dealsId" class="col-md-12 col-sm-12 col-xs-12 how" style="margin-bottom:10px;">
-                            <p>goHomely <span class="green">Deals</span>
+                            <p>Anus Kitchen <span class="green">Deals</span>
                             </p>
                             <hr>
                         </div>
 
+<!-- tab Dialog Start -->
+<div ng-controller="AppCtrl" class="md-padding dialogdemoBasicUsage" id="popupContainer" ng-cloak="" ng-app="MyApp">
+
+     <div style="visibility: hidden">
+        <div class="md-dialog-container" id="myDialog">
+           <md-dialog layout-padding="">
+              <h2>Pre-Rendered Dialog</h2>
+              <p>
+                 This is a pre-rendered dialog, which means that <code>$mdDialog</code> doesn't compile its
+              </p>
+           </md-dialog>
+        </div>
+     </div>
+     <script type="text/ng-template" id="dialog1.tmpl.html"><md-dialog aria-label="Mango (Fruit)">
+        <form ng-cloak>
+          <md-toolbar>
+            <div class="md-toolbar-tools">
+              <h2>Mango (Fruit)</h2>
+              <span flex></span>
+              <md-button class="md-icon-button" ng-click="cancel()">
+                <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+              </md-button>
+            </div>
+          </md-toolbar>
+
+          <md-dialog-content>
+            <div class="md-dialog-content">
+              <h2>Using .md-dialog-content class that sets the padding as the spec</h2>
+            </div>
+          </md-dialog-content>
+
+          <md-dialog-actions layout="row">
+            <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+              More on Wikipedia
+            </md-button>
+            <span flex></span>
+            <md-button ng-click="answer('not useful')">
+             Not Useful
+            </md-button>
+            <md-button ng-click="answer('useful')">
+              Useful
+            </md-button>
+          </md-dialog-actions>
+        </form>
+        </md-dialog>
+     </script>
+     <script type="text/ng-template" id="tabDialog.tmpl.html"><md-dialog aria-label="Mango (Fruit)">
+        <form>
+          <md-toolbar>
+            <div class="md-toolbar-tools">
+              <h2>Mango (Fruit)</h2>
+              <span flex></span>
+              <md-button class="md-icon-button" ng-click="cancel()">
+                <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+              </md-button>
+            </div>
+          </md-toolbar>
+          <md-dialog-content style="max-width:800px;max-height:810px; ">
+            <md-tabs md-dynamic-height md-border-bottom>
+
+              <md-tab label="one">
+                <md-content class="md-padding">
+                  <h1 class="md-display-2">Tab One</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+                </md-content>
+              </md-tab>
+
+              <md-tab label="two">
+                <md-content class="md-padding">
+                  <h1 class="md-display-2">Tab Two</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+                  <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+                  <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                </md-content>
+              </md-tab>
+
+              <md-tab label="three">
+                <md-content class="md-padding">
+                  <h1 class="md-display-2">Tab Three</h1>
+                  <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                </md-content>
+              </md-tab>
+
+               <md-tab label="four">
+                  <md-content class="md-padding">
+                    <h1 class="md-display-2">Tab Four</h1>
+                    <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                  </md-content>
+                </md-tab>
+
+            </md-tabs>
+          </md-dialog-content>
+
+          <md-dialog-actions layout="row">
+            <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+              More on Wikipedia
+            </md-button>
+            <span flex></span>
+            <md-button ng-click="answer('not useful')" >
+              Not Useful
+            </md-button>
+            <md-button ng-click="answer('useful')" style="margin-right:20px;" >
+              Useful
+            </md-button>
+          </md-dialog-actions>
+        </form>
+        </md-dialog>
+     </script>
+  </div>
+
+<!-- tab end -->
 
 
-                        <div class="col-md-12 col-sm-12 col-xs-12 hidden-md hidden-xs" style="margin-bottom:20px; padding:0px;">
-                            <a href="index.html#">
-                                <div class="col-md-3 col-sm-6 col-xs-6 hvr-shrink  off" style="margin-bottom:75px;">
-                                    <div class="col-xs-12 off1" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-                                            <li style="padding-top:60px;"><span class="sub">Subscribe </span> </li>
-                                            <li><span class="subm">7 Meals  </span> </li>
-                                            <li><span class="sub">get </span> </li>
-                                            <li><span class="subo">10% OFF </span> </li>
-                                            <li class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 text-center ord">ORDER</li>
-                                            <br>
-                                            <br>
-                                            <li style="padding-bottom:15px;"><span class="subv">Validity - 15 Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                            <!--col-3-->
-                            <a href="index.html#">
-                                <div class="col-md-3 col-sm-6 col-xs-6 hvr-shrink  off" style="border-left:1px solid white; border-right:1px solid white; margin-bottom:75px;">
-                                    <div class="col-xs-12 off1" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe ">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-                                            <li style=" padding-top:60px;"><span class="sub">Subscribe </span> </li>
-                                            <li><span class="subm">15 Meals  </span> </li>
-                                            <li><span class="sub">get </span> </li>
-                                            <li><span class="subo">15% OFF </span> </li>
-                                            <li class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 text-center ord">ORDER</li>
-                                            <br>
-                                            <br>
-                                            <li style="padding-bottom:15px;"><span class="subv">Validity - 30 Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                            <a href="index.html#">
-                                <div class="col-md-3 col-sm-6 col-xs-6 hvr-shrink  off" style="border-left:1px solid white; border-right:1px solid white; margin-bottom:65px;">
-                                    <div class="col-xs-12 off1" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-                                            <li style=" padding-top:60px;"><span class="sub">Subscribe </span> </li>
-                                            <li><span class="subm">30 Meals  </span> </li>
-                                            <li><span class="sub">get </span> </li>
-                                            <li><span class="subo">20% OFF </span> </li>
-                                            <li class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 text-center ord">ORDER</button>
-                                            </li>
-                                            <br>
-                                            <br>
-                                            <li style="padding-bottom:15px;"><span class="subv">Validity - 60 Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                            <a href="index.html#">
-                                <div class="col-md-3 col-sm-6 col-xs-6 hvr-shrink  off" style="margin-bottom:65px;">
-                                    <div class="col-xs-12 off1" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-
-                                            <li style="padding-top:60px;"><span class="subo" style="font-size:5vh; ">Plan your</span>
-                                            </li>
-
-                                            <li style="padding:0px; "><span class="subo" style="font-size:5vh; ">Meal Plan </span> </li>
-                                            <li style="font-size:3vh; padding:12px 0px;">Let us help
-                                                <br> plan your meals</li>
-                                            <li class="col-md-6 col-md-offset-3  col-sm-6 col-sm-offset-3  col-xs-6 col-xs-offset-3  ord1" style="">CONTACT US &nbsp;&nbsp;</button>
-                                            </li>
-                                            <br>
-                                            <br>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                        </div>
-
-                        <!--for medium screen-->
 
 
 
 
-                        <div class="col-md-12 col-sm-12 col-xs-12 visible-md visible-xs" style="margin-bottom:40px; ">
-                            <a href="index.html#" style="text-decoration:none;">
-                                <div class="col-md-3 col-sm-6 col-xs-12 hvr-shrink  offm" style="margin-bottom:45px;">
-                                    <div class="col-md-12 off2" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-                                            <li style=" padding-top:60px;"><span class="sub">Subscribe </span> </li>
-                                            <li><span class="subm">7 Meals  </span> </li>
-                                            <li><span class="sub">get </span> </li>
-                                            <li><span class="subo">10% OFF </span> </li>
-                                            <li class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 text-center ord">ORDER</li>
-                                            <br>
-                                            <br>
-                                            <li style="padding-bottom:15px;"><span class="subv">Validity - 15 Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                            <a href="index.html#" style="text-decoration:none;">
-                                <div class="col-md-3 col-sm-6 col-xs-12 hvr-shrink  offm" style="border-left:1px solid white; border-right:1px solid white; margin-bottom:45px;">
-                                    <div class="col-md-12 off2" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-                                            <li style=" padding-top:60px;"><span class="sub">Subscribe </span> </li>
-                                            <li><span class="subm">15 Meals  </span> </li>
-                                            <li><span class="sub">get </span> </li>
-                                            <li><span class="subo">15% OFF </span> </li>
-                                            <li class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 text-center ord">ORDER</li>
-                                            <br>
-                                            <br>
-                                            <li style="padding-bottom:15px;"><span class="subv">Validity - 30 Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                            <a href="index.html#" style="text-decoration:none;">
-                                <div class="col-md-3 col-sm-6 col-xs-12 hvr-shrink  offm" style="border-left:1px solid white; border-right:1px solid white; margin-bottom:45px;">
-                                    <div class="col-md-12 off2" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-                                            <li style=" padding-top:60px;"><span class="sub">Subscribe </span> </li>
-                                            <li><span class="subm">30 Meals  </span> </li>
-                                            <li><span class="sub">get </span> </li>
-                                            <li><span class="subo">20% OFF </span> </li>
-                                            <li class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 text-center ord">ORDER</button>
-                                            </li>
-                                            <br>
-                                            <br>
-                                            <li style="padding-bottom:15px;"><span class="subv">Validity - 60 Days</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                            <a href="index.html#" style="text-decoration:none;">
-                                <div class="col-md-3 col-sm-6 col-xs-12 hvr-shrink  offm" style="margin-bottom:45px;">
-                                    <div class="col-md-12 off2" href="#dealsId" onclick="return false;" data-toggle="modal" data-target="#still-cooking">
-                                        <ul>
-                                            <li class="col-md-4 col-md-offset-4 pull-right spe">
-                                                <!--<div class="dea">Special Deal</div>-->
-                                            </li>
-
-                                            <li style="padding-top:60px;"><span class="subo" style="font-size:5vh; ">Plan your</span>
-                                            </li>
-
-                                            <li style="padding:0px; "><span class="subo" style="font-size:5vh; ">Meal Plan </span> </li>
-                                            <li style="font-size:3vh; padding:12px 0px;">Let us help
-                                                <br> plan your meals</li>
-                                            <li class="col-md-6 col-md-offset-3  col-sm-6 col-sm-offset-3  col-xs-6 col-xs-offset-3 text-center ord1" style="">CONTACT US &nbsp;&nbsp;</button>
-                                            </li>
-                                            <br>
-                                            <br>
-                                        </ul>
-                                    </div>
-                                    <!--off1-->
-                                </div>
-                            </a>
-                            <!--col-3-->
-                        </div>
 
                     </div>
                 </div>
                 <!--col-12-->
 
         </section>
+
+
+         <!-- tab dialog start -->
+                                                    <div id="popupContainer">
+                                                         <div style="visibility: hidden">
+                                                            <div class="md-dialog-container" id="myDialog">
+                                                               <md-dialog layout-padding="">
+                                                                  <h2>Pre-Rendered Dialog</h2>
+                                                                  <p>
+                                                                     This is a pre-rendered dialog, which means that <code>$mdDialog</code> doesn't compile its
+                                                                  </p>
+                                                               </md-dialog>
+                                                            </div>
+                                                         </div>
+
+                                                         <script type="text/ng-template" id="dialog1.tmpl.html"><md-dialog aria-label="Mango (Fruit)">
+                                                            <form ng-cloak>
+                                                              <md-toolbar>
+                                                                <div class="md-toolbar-tools">
+                                                                  <h2>Mango (Fruit)</h2>
+                                                                  <span flex></span>
+                                                                  <md-button class="md-icon-button" ng-click="cancel()">
+                                                                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                                                                  </md-button>
+                                                                </div>
+                                                              </md-toolbar>
+
+                                                              <md-dialog-content>
+                                                                <div class="md-dialog-content">
+                                                                  <h2>Using .md-dialog-content class that sets the padding as the spec</h2>
+                                                                </div>
+                                                              </md-dialog-content>
+
+                                                              <md-dialog-actions layout="row">
+                                                                <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+                                                                  More on Wikipedia
+                                                                </md-button>
+                                                                <span flex></span>
+                                                                <md-button ng-click="answer('not useful')">
+                                                                 Not Useful
+                                                                </md-button>
+                                                                <md-button ng-click="answer('useful')">
+                                                                  Useful
+                                                                </md-button>
+                                                              </md-dialog-actions>
+                                                            </form>
+                                                            </md-dialog>
+                                                         </script>
+                                                         <script type="text/ng-template" id="tabDialog.tmpl.html"><md-dialog aria-label="Mango (Fruit)">
+                                                            <form>
+                                                              <md-toolbar>
+                                                                <div class="md-toolbar-tools">
+                                                                  <h2>Mango (Fruit)</h2>
+                                                                  <span flex></span>
+                                                                  <md-button class="md-icon-button" ng-click="cancel()">
+                                                                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                                                                  </md-button>
+                                                                </div>
+                                                              </md-toolbar>
+                                                              <md-dialog-content style="max-width:800px;max-height:810px; ">
+                                                                <md-tabs md-dynamic-height md-border-bottom>
+
+                                                                  <md-tab label="one">
+                                                                    <md-content class="md-padding">
+                                                                      <h1 class="md-display-2">Tab One</h1>
+                                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+                                                                    </md-content>
+                                                                  </md-tab>
+
+                                                                  <md-tab label="two">
+                                                                    <md-content class="md-padding">
+                                                                      <h1 class="md-display-2">Tab Two</h1>
+                                                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+                                                                      <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+                                                                      <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                                    </md-content>
+                                                                  </md-tab>
+
+                                                                  <md-tab label="three">
+                                                                    <md-content class="md-padding">
+                                                                      <h1 class="md-display-2">Tab Three</h1>
+                                                                      <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                                    </md-content>
+                                                                  </md-tab>
+
+                                                                   <md-tab label="four">
+                                                                      <md-content class="md-padding">
+                                                                        <h1 class="md-display-2">Tab Four</h1>
+                                                                        <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                                      </md-content>
+                                                                    </md-tab>
+
+                                                                </md-tabs>
+                                                              </md-dialog-content>
+
+                                                              <md-dialog-actions layout="row">
+                                                                <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+                                                                  More on Wikipedia
+                                                                </md-button>
+                                                                <span flex></span>
+                                                                <md-button ng-click="answer('not useful')" >
+                                                                  Not Useful
+                                                                </md-button>
+                                                                <md-button ng-click="answer('useful')" style="margin-right:20px;" >
+                                                                  Useful
+                                                                </md-button>
+                                                              </md-dialog-actions>
+                                                            </form>
+                                                            </md-dialog>
+                                                         </script>
+
+
+
+
+                                                    </div>
+
+                                                    <!-- tab dialog end -->
+
 
         </div>
         <!-- #wrapper end -->
@@ -716,5 +574,18 @@
             });
         </script>
 
+<script src="<c:url value='/resources/js/ys/plugins.js' />"></script>
+<script src="<c:url value='/resources/js/ys/home.js' />"></script>
+<script src="<c:url value='/resources/js/ys/script.js' />"></script>
 
 
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js'></script>
+<script src="<c:url value='/resources/js/ys/pageInitialise.js' />"></script>
+
+<script src="<c:url value='/resources/js/angular-dialog.js' />"></script>

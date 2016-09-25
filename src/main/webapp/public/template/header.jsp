@@ -3,10 +3,20 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<script src="<c:url value='/resources/js/pages/header.js' />"></script>
+    <script src="<c:url value='/resources/js/pages/header.js' />"></script>
+
+
+    <!-- Home Page Diamond CSS Start -->
+    <link href="<c:url value='/resources/css/style2.css'/>" rel="stylesheet"/>
+    <!-- Home Page Diamond CSS End -->
+    <script src="<c:url value='/resources/js/ys/pageInitialise.js' />"></script>
+
 
 <!-- Begin Header -->
 <header id="header" class="full-header">
+
+
+
     <div id="header-wrap">
         <div class="container clearfix">
 
@@ -20,13 +30,15 @@
             </div>
             <!-- #logo end -->
 
+
+
             <!-- Primary Navigation
             ============================================= -->
             <nav id="primary-menu">
 
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="/">
                             <div>Home</div>
                         </a>
                     </li>
@@ -98,46 +110,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="mega-menu">
-                        <a href="products.html">
-                            <div>Our Products</div>
-                        </a>
-                        <div class="mega-menu-content col-4 clearfix">
-                            <ul>
 
-                                <li>
-                                    <a href="product-details.html">
-                                        <div><img width="30" height="30" src="/resources/images/products/skin-lightening-cream/skin-lightening-cream-01.jpg"> &nbsp; Moisturisers </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a href="product-details.html">
-                                        <div><img width="30" height="30" src="/resources/images/products/skin-lightening-cream/skin-lightening-cream-01.jpg"> &nbsp; Anti Wrinkle Cream </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a href="product-details.html">
-                                        <div><img width="30" height="30" src="/resources/images/products/skin-lightening-cream/skin-lightening-cream-01.jpg"> &nbsp; Anti Acne Cream </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a href="product-details.html">
-                                        <div><img width="30" height="30" src="/resources/images/products/skin-lightening-cream/skin-lightening-cream-01.jpg"> &nbsp; Skin Lightening Cream </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </li>
                     <li>
                         <a href="#">
                             <div>Information</div>

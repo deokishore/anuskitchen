@@ -14,7 +14,7 @@
                 ============================================= -->
                 <div class="footer-widgets-wrap clearfix" style="padding:40px 0;">
                     <div class="footer-logo">
-                        <img src="/resources/images/logo.png" alt="Tamaar Skin Care London" class="footer-logo" width="125" height="100">
+                        <img src="/resources/images/logo-dark@2x.png" alt="Tamaar Skin Care London" class="footer-logo" width="125" height="100">
                     </div>
                     <div class="col_two_third">
                         <div class="col_one_third">

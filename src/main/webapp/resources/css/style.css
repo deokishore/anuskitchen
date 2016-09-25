@@ -122,7 +122,7 @@ blockquote,
 address,
 table,
 fieldset,
-form { margin-bottom: 30px; }
+form { margin-bottom: 5px; }
 
 small { font-family: 'Lato', sans-serif; }
 
@@ -12264,4 +12264,8 @@ body:not(.no-transition) #wrapper,
 	border-right: 16px solid transparent;
 	border-left: 16px solid transparent;
 	border-top: 16px solid #858787;
+}
+
+.md-toolbar-tools {
+    background-color: #dddddd;
 }
